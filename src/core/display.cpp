@@ -8,21 +8,7 @@
 #include <interface.h> //for charging ischarging to print charging indicator
 #include <memory>
 
-// --- Bigger text for Cardputer ADV readability ---
-#ifdef FM
-#undef FM
-#endif
-#ifdef FP
-#undef FP
-#endif
-#ifdef FG
-#undef FG
-#endif
-#define FM 3
-#define FP 2
-#define FG 4
-
-#define MAX_MENU_SIZE (int)(tftHeight / (FM * 8 + 4)) - 1
+#define MAX_MENU_SIZE (int)(tftHeight / 25)
 
 // Send the ST7789 into or out of sleep mode
 void panelSleep(bool on) {
