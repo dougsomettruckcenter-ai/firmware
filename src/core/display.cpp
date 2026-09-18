@@ -22,7 +22,7 @@
 #define FP 2
 #define FG 4
 
-#define MAX_MENU_SIZE (int)(tftHeight / (FM * 8 + 4))
+#define MAX_MENU_SIZE (int)(tftHeight / (FM * 8 + 4)) - 1
 
 // Send the ST7789 into or out of sleep mode
 void panelSleep(bool on) {
